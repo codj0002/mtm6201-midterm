@@ -1,0 +1,75 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  background-color: #f3f0e9;
+  color: #222;
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+h3 {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+a, a:visited {
+  text-decoration: none; 
+  color: inherit;
+}
+
+a:hover, a:focus {
+  background-color: #d69e3d;
+  color: #222222;
+  padding: 18px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  text-align:right;
+  font-size: 0.9rem;
+  justify-content: space-between;
+}
+
+.nav li a {
+  display: block;
+  padding: 1.4rem;
+}
+
+.nav li a.active {
+  background-color: #966f2c;
+  color: #222222;
+  padding: 1rem;
+}
+
+.herohero-content {
+  background-image: url("../mtm6201-midterm/images/hero-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  color: white;
+  padding: 50px 0;
+}
