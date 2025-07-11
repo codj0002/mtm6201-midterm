@@ -314,6 +314,8 @@ p {
 .about-grid p {
   margin-bottom: 1rem;
 }
+
+/* Testimonials Section */
  .testimonials {
   padding: 2.5rem 0 1.5rem 0;
 } 
@@ -343,7 +345,6 @@ p {
     gap: 20px;
 }
 
-
 .testimonials h2 {
     color: var(--white);
     margin-top: 10px;
@@ -368,7 +369,6 @@ p {
     transition: var(--transition);
 }
 
-
 .testimonial-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -391,7 +391,7 @@ p {
   margin: 0.5rem 0;
 }
 
-
+/* Footer Section */
 .footer {
   background: var(--primary-color);
   color: #fff;
@@ -424,7 +424,7 @@ p, .btn, body, .about-grid p, .card p, .testimonial-container p, .locations-cont
     padding: 0 20px;
 }
 
-.site-header {
+.hero {
     background-color: transparent;
     position: absolute;
     top: 0;
@@ -433,7 +433,7 @@ p, .btn, body, .about-grid p, .card p, .testimonial-container p, .locations-cont
     z-index: 1000;
 }
 
-.header-content {
+.hero-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
