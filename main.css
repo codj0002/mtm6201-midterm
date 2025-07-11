@@ -121,7 +121,7 @@ hr {
     font-size: 1.2rem;
 }
 
-/--------------ACCESSIBILITY NAVIGATION---------------/
+/* /--------------ACCESSIBILITY NAVIGATION---------------/ */
 
 .nav {
     list-style: none;
@@ -147,7 +147,7 @@ hr {
     text-decoration: none;
 }
 
-/--------------ANIMATIONS---------------/
+/* /--------------ANIMATIONS---------------/ */
 
 
 
@@ -1017,7 +1017,7 @@ h3 {
         height: 100%;
     }
 
-    /* CTA Section */
+    /* locations */
     .locations {
         height: 400px;
     }
@@ -1055,20 +1055,6 @@ h3 {
         padding: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
-    }
-
-    .testimonials {
-        padding-left: 75px;
-        padding-right: 75px;
-    }
-
-    .testimonials h2 {
-        padding-right: 400px;
-        margin-bottom: 20px;
-    }
-
-    .testimonial-container {
-        height: 400px;
     }
 
     /* Footer */
