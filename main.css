@@ -5,7 +5,6 @@ html {
     box-sizing: inherit;
 }
 
-/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@700;900&display=swap');
 
 :root {
@@ -71,8 +70,8 @@ p {
     display: inline-block;
     font-family: 'Karla', Arial, sans-serif;
     font-weight: 800;
-    background: var(--white);
-    color: var(--accent-color);
+    background: var(--black);
+    color: var(--white);
     text-transform: uppercase;
     border: none;
     border-radius: 4px;
@@ -207,12 +206,15 @@ p {
   margin-bottom: 1.5rem;
 }
 .gallery {
-    display: flex;
-    flex-direction: column;
+     margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .gallery img {
-    width: 25%;
+    width: 50%;
+    border-radius: 8px;
+    transition: var(--transition);
 }
 
 .image-container {
@@ -312,17 +314,20 @@ p {
 .about-grid p {
   margin-bottom: 1rem;
 }
-/* .testimonials {
+ .testimonials {
   padding: 2.5rem 0 1.5rem 0;
-} */
+} 
 .testimonial-container {
     background-color: var(--black);
     display: grid;
     grid-template-columns: 1fr;
     padding: 40px 10px;
-    text-align: center;
-
 }
+
+.testimonials p {
+    margin: 0;
+}
+
 .testimonial-container img {
   width: 100px;
   height: 100px;
@@ -330,6 +335,56 @@ p {
   object-fit: cover;
   margin-bottom: 0.5rem;
 }
+
+.testimonials-grid { 
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.testimonials h2 {
+    color: var(--white);
+    margin-top: 10px;
+    padding-right: 100px;
+}
+
+.testimonials-grid img {
+    opacity: .6;
+    transition: var(--transition);
+}
+
+.testimonials-grid img:hover {
+    opacity: 1;
+}
+
+.testimonial-container{
+   height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+
+.testimonial-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-container p {
+    color: var(--white);
+    padding: 0 20px;
+}
+
 .testimonial-container h3 {
   font-family: 'Lato', Arial, sans-serif;
   color: var(--primary-color);
@@ -362,17 +417,133 @@ p, .btn, body, .about-grid p, .card p, .testimonial-container p, .locations-cont
   font-size: 1rem;
 }
 
-@media (min-width: 600px) {
-  h1 {
-    font-size: 3rem;
+@media screen and (max-width:768px){
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 17.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 355px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.logo img {
+    width: 245px;
+    height: 31px;
+    transition: var(--transition);
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+
+.nav {
+    display: none;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav ul a {
+    display: flex;
+    color: var(--white);
+    padding: .75em 1.25em;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: var(--transition);
+    border-radius: 4px;
+}
+
+/* Hover and Focus nav */
+.nav ul a:hover,
+.nav ul a:focus {
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+}
+
+@media screen and (min-width:768px) {
+    h1 {
+        font-size: 2.986rem;
+    }
+
+    h2 {
+        font-size: 2.488rem;
+    }
+
+    h3 {
+        font-size: 1.728rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 0 80px;
+    }
+
+    .hero-content {
+        margin-bottom: 100px;
+    }
+
+    .image-container img {
+    width: 100px;
+    height: 100px;
   }
-  h2 {
-    font-size: 2.375rem;
+  .locations-flex,
+  .about-flex {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
   }
-  h3 {
-    font-size: 1.75rem;
+  .about-grid,
+  .locations-content {
+    text-align: left;
   }
-  
+  .testimonial-container img {
+    width: 100px;
+    height: 100px;
+  }
+  .testimonial-container {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .grid-container {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -387,19 +558,6 @@ p, .btn, body, .about-grid p, .card p, .testimonial-container p, .locations-cont
   }
   
 }
-
-
-@media (min-width: 600px) {
-  h1 {
-    font-size: 3rem;      
-  }
-  h2 {
-    font-size: 2.375rem;  
-  }
-  h3 {
-    font-size: 1.75rem;   
-  }
-  
   .hero-content {
     flex-direction: row;
     justify-content: space-between;
@@ -437,8 +595,6 @@ p, .btn, body, .about-grid p, .card p, .testimonial-container p, .locations-cont
     flex-direction: row;
     gap: 2.5rem;
   }
-}
-
 
 @media (min-width: 900px) {
   .grid-container {
@@ -458,7 +614,7 @@ p, .btn, body, .about-grid p, .card p, .testimonial-container p, .locations-cont
     padding: 0;
   }
   .hero-section {
-    min-height: 70vh;
+    min-height: 100vh;
   }
   .about-us-img {
     max-width: 450px;
