@@ -367,7 +367,7 @@ hr {
 
 /* Hero Banner */
 .hero-section {
-    background-image: url(".../images/hero-background.jpg");
+    background-image: url("images/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 90% 45%;
