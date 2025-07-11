@@ -14,7 +14,6 @@
         <li><a href="#main">Skip to main content</a></li>
     </ul>
 
-    
     <header class="hero">
         <div class="logo-container">
             <div class="logo">
@@ -31,35 +30,65 @@
                 <li><a href="#locations">Locations</a></li>
             </ul>
         </nav>
+
+         <!-- Mobile Hamburger Menu -->
+                <button class="hamburger-menu" aria-label="Open menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Mobile Menu Container -->
+                <div class="mobile-menu-container">
+                    <div class="mobile-menu">
+                        <button class="close-menu" aria-label="Close menu">
+                            <span class="close-icon"></span>
+                        </button>
+                        <nav class="mobile-nav">
+                            <ul>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#locations">Locations</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
     </header>
 
     <main id="main-content">
         <section class="hero-section" id="hero">
             <div class="hero-content">
-                <div class="hero-content-text">
+                <div class="wrapper">
+<div class="hero-content-text">
                     <h1>EXPERIENCE COFFEE LIKE <span>NEVER BEFORE</span></h1>
                     <p>We craft more than beverages; we curate memories, one flavourful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
                     <button class="btn" type="button" role="button">Explore our menu</button>
                 </div>
-            </div>
-        </section>
-        <section  class="content-grid-section" id="content-grid-section">
-            <div class="content-grid">
-                <p class="text">Welcome to My Coffee House</p>
-                <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
-                <div class="gallery">
-                    <img src="images/latte.jpeg" alt="A cup of latte coffee" />
-                    <div class="image-container">        
-                            <img src="images/coffee-beans.jpeg" alt="Coffee beans" />
-                            <img src="images/three-cups.jpeg" alt="Three cups of coffee" />
-                            <img src="images/pouring-coffee.jpeg" alt="Pouring coffee into a cup" />
-                            <img src="images/smiling-employee.jpeg" alt="Smiling coffee shop employee" />
-                        </picture>
-                    </div>
-                    
                 </div>
                 
             </div>
+        </section>
+        <section  class="content-grid-section" id="content-grid-section">
+            <div class="wrapper">
+                    <div class="content-grid">
+                        <p class="text">Welcome to My Coffee House</p>
+                         <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
+                             <div class="gallery">
+                                <img src="images/latte.jpeg" alt="A cup of latte coffee" />
+                                    <div class="image-container">        
+                                            <img src="images/coffee-beans.jpeg" alt="Coffee beans" />
+                                            <img src="images/three-cups.jpeg" alt="Three cups of coffee" />
+                                            <img src="images/pouring-coffee.jpeg" alt="Pouring coffee into a cup" />
+                                            <img src="images/smiling-employee.jpeg" alt="Smiling coffee shop employee" />
+                                        </picture>
+                                    </div>
+                                
+                </div>
+            </div>
+            </div>
+            
         </section>
 
         <section class="why-us" id="why-us">
@@ -95,13 +124,13 @@
                     <div id="menu" class="menu">
                         <p class="text">Our Menu</p>
                         <h2>EXPLORE WHAT WE HAVE TO OFFER YOU</h2>
-                            <button type="button" class="btn" role="button">Explore our menu</button>
+                            <button type="button" class="location-btn" role="button">Explore our menu</button>
                     </div>
-                   <div id="locations" class="locations">
+                   <div id="location" class="location">
                     <p class="text">Locations</p>
                     <h2>FIND YOUR NEAREST COFFEE SHOP</h2>
                     <div class="location-cards" aria-label="Location cards"></div>
-                        <button type="button" id="clear-btn" class="btn" role="button">View Locations</button>
+                        <button type="button" id="clear-btn" class="location-btn" role="button">View Locations</button>
                    </div>
                 </div>
             </div>
@@ -131,17 +160,17 @@
                     <h2>What our customers say about us</h2>
                 <div class="testimonial-container">
                     <img src="images/testimonial-1.jpeg" alt="A picture of Jane D, customer from Toronto" />
-                    <h3>Jane D, Toronto</h3>
+                    <h3 class="customers">Jane D, Toronto</h3>
                         <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
                 </div>
                 <div class="testimonial-container">
                     <img src="images/testimonial-2.jpeg" alt="A picture of Scott S, customer from Ottawa" />
-                    <h3>Scott S, Ottawa</h3>
+                    <h3 class="customers">Scott S, Ottawa</h3>
                         <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
                 </div>
                 <div class="testimonial-container">
                     <img src="images/testimonial-3.jpeg" alt="A picture of Susie F, customer from Ottawa" />
-                    <h3>Susie F, Ottawa</h3>
+                    <h3 class="customers">Susie F, Ottawa</h3>
                         <p>"Best coffee in the Ottawa area and the service is top notch. Would highly recommend a visit."</p>
                 </div>
             </div>
