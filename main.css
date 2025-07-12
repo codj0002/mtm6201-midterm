@@ -537,7 +537,9 @@ p {
 
   /* Testimonials */
   .testimonials-grid {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
